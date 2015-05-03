@@ -7,8 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FreeHandView.h"
+#import "ImageVC.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<FreeHandViewDelegate>
+{
+    
+}
+
+@property (weak, nonatomic) IBOutlet FreeHandView *viewFreeHand;
+
+- (IBAction)deleteOnTap:(id)sender;
 
 
 @end

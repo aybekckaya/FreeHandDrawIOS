@@ -14,6 +14,10 @@
 		A324E4711AF57E0F0043F0D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A324E4701AF57E0F0043F0D6 /* Images.xcassets */; };
 		A324E4741AF57E0F0043F0D6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A324E4721AF57E0F0043F0D6 /* LaunchScreen.xib */; };
 		A324E4801AF57E0F0043F0D6 /* FreeHandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A324E47F1AF57E0F0043F0D6 /* FreeHandTests.m */; };
+		A324E48A1AF57E2C0043F0D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A324E4891AF57E2C0043F0D6 /* UIKit.framework */; };
+		A324E48C1AF57E330043F0D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A324E48B1AF57E330043F0D6 /* Foundation.framework */; };
+		A324E4911AF5843D0043F0D6 /* FreeHandView.m in Sources */ = {isa = PBXBuildFile; fileRef = A324E4901AF5843D0043F0D6 /* FreeHandView.m */; };
+		A330B34C1AF677AF00792CCA /* ImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A330B34B1AF677AF00792CCA /* ImageVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,13 @@
 		A324E4791AF57E0F0043F0D6 /* FreeHandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeHandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A324E47E1AF57E0F0043F0D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A324E47F1AF57E0F0043F0D6 /* FreeHandTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreeHandTests.m; sourceTree = "<group>"; };
+		A324E4891AF57E2C0043F0D6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A324E48B1AF57E330043F0D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A324E48D1AF57E420043F0D6 /* Header.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.pch; sourceTree = "<group>"; };
+		A324E48F1AF5843D0043F0D6 /* FreeHandView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeHandView.h; sourceTree = "<group>"; };
+		A324E4901AF5843D0043F0D6 /* FreeHandView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreeHandView.m; sourceTree = "<group>"; };
+		A330B34A1AF677AF00792CCA /* ImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageVC.h; sourceTree = "<group>"; };
+		A330B34B1AF677AF00792CCA /* ImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A324E48C1AF57E330043F0D6 /* Foundation.framework in Frameworks */,
+				A324E48A1AF57E2C0043F0D6 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,8 @@
 		A324E4571AF57E0F0043F0D6 = {
 			isa = PBXGroup;
 			children = (
+				A324E48B1AF57E330043F0D6 /* Foundation.framework */,
+				A324E4891AF57E2C0043F0D6 /* UIKit.framework */,
 				A324E4621AF57E0F0043F0D6 /* FreeHand */,
 				A324E47C1AF57E0F0043F0D6 /* FreeHandTests */,
 				A324E4611AF57E0F0043F0D6 /* Products */,
@@ -81,6 +96,7 @@
 		A324E4621AF57E0F0043F0D6 /* FreeHand */ = {
 			isa = PBXGroup;
 			children = (
+				A324E48E1AF5842C0043F0D6 /* FreeHandView */,
 				A324E4671AF57E0F0043F0D6 /* AppDelegate.h */,
 				A324E4681AF57E0F0043F0D6 /* AppDelegate.m */,
 				A324E46A1AF57E0F0043F0D6 /* ViewController.h */,
@@ -89,6 +105,8 @@
 				A324E4701AF57E0F0043F0D6 /* Images.xcassets */,
 				A324E4721AF57E0F0043F0D6 /* LaunchScreen.xib */,
 				A324E4631AF57E0F0043F0D6 /* Supporting Files */,
+				A330B34A1AF677AF00792CCA /* ImageVC.h */,
+				A330B34B1AF677AF00792CCA /* ImageVC.m */,
 			);
 			path = FreeHand;
 			sourceTree = "<group>";
@@ -98,6 +116,7 @@
 			children = (
 				A324E4641AF57E0F0043F0D6 /* Info.plist */,
 				A324E4651AF57E0F0043F0D6 /* main.m */,
+				A324E48D1AF57E420043F0D6 /* Header.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +136,15 @@
 				A324E47E1AF57E0F0043F0D6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A324E48E1AF5842C0043F0D6 /* FreeHandView */ = {
+			isa = PBXGroup;
+			children = (
+				A324E48F1AF5843D0043F0D6 /* FreeHandView.h */,
+				A324E4901AF5843D0043F0D6 /* FreeHandView.m */,
+			);
+			name = FreeHandView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +247,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A330B34C1AF677AF00792CCA /* ImageVC.m in Sources */,
 				A324E46C1AF57E0F0043F0D6 /* ViewController.m in Sources */,
+				A324E4911AF5843D0043F0D6 /* FreeHandView.m in Sources */,
 				A324E4691AF57E0F0043F0D6 /* AppDelegate.m in Sources */,
 				A324E4661AF57E0F0043F0D6 /* main.m in Sources */,
 			);
@@ -414,6 +444,7 @@
 				A324E4851AF57E0F0043F0D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A324E4861AF57E0F0043F0D6 /* Build configuration list for PBXNativeTarget "FreeHandTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +453,7 @@
 				A324E4881AF57E0F0043F0D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
